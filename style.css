@@ -21,6 +21,7 @@
 }
 
 body {
+<<<<<<< HEAD
     background: linear-gradient(
         180deg,
         var(--light-purple) 0%,
@@ -34,6 +35,17 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     padding-top: 100px;
+=======
+    /* PERBAIKAN UTAMA: Mengatur gradien body agar seluruh area di bawah fixed header 
+       (termasuk padding-top) tertutup oleh warna awal Hero Section (light-purple). */
+    background: linear-gradient(180deg, var(--light-purple) 0%, var(--very-light-blue) 40%, #ffffff 100%); 
+    
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Tetap tambahkan padding atas agar konten tidak tertutup fixed header */
+    padding-top: 100px; 
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 }
 
 .container {
@@ -43,7 +55,11 @@ body {
 }
 
 section {
+<<<<<<< HEAD
     padding: 5px 0;
+=======
+    padding: 80px 0;
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
     text-align: center;
     position: relative;
     /* KOREKSI: Menggunakan nilai kompensasi yang lebih besar agar judul tidak terpotong */
@@ -151,6 +167,7 @@ section {
     max-width: 95%; /* Kontainer di dalam navbar */
 }
 
+<<<<<<< HEAD
 /* ===== Navbar Logo ===== */
 .logo{
   display:flex;
@@ -185,6 +202,8 @@ section {
   .logo-img{ width:28px; height:28px; }
 }
 
+=======
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 .logo {
     display: flex;
     align-items: center;
@@ -218,7 +237,11 @@ section {
     height: 90vh; 
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     margin-bottom: 30px;
+=======
+    margin-bottom: 100px;
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 }
 
 .hero-container {
@@ -252,6 +275,7 @@ section {
     line-height: 1.4;
 }
 
+<<<<<<< HEAD
 /* ===== HERO — 2 sachet besar, glow + shadow ===== */
 #pouch-hero {
   position: relative;
@@ -349,11 +373,42 @@ section {
   #pouch-hero .s1 { display: none; }
   #pouch-hero .s2 { right: 6%; top: 42%; transform: rotate(-18deg); }
 }
+=======
+.hero-images {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    min-height: 400px;
+}
+
+.product-pouch {
+    position: absolute;
+    width: 150px;
+    height: 380px;
+    /* Placeholder gambar pouch produk */
+    background-image: url('https://via.placeholder.com/150x380/c0c0c0/5b46b8?text=Jam');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease;
+}
+.product-pouch:hover { transform: translateY(-10px) scale(1.05); }
+
+.pouch-1 { top: 50px; right: 40%; transform: rotate(10deg); }
+.pouch-2 { top: 20px; right: 10%; transform: rotate(-15deg); }
+.pouch-3 { top: 10px; right: 5%; transform: rotate(-35deg); }
+
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 
 /* --- Benefits Section --- */
 .benefits-section {
     padding-top: 35px; 
+<<<<<<< HEAD
     margin-bottom: 160px;
+=======
+    margin-bottom: 60px;
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 }
 .benefits-section .section-title { color: var(--primary-purple); }
 
@@ -376,6 +431,7 @@ section {
 }
 .benefit-item:hover { transform: translateY(-5px); }
 
+<<<<<<< HEAD
 /* --- Fix ukuran & posisi icon Benefits --- */
 .benefit-icon {
   width: 110px;              /* kotak ikon */
@@ -464,6 +520,33 @@ section {
   z-index: 1;
   pointer-events: none;
 }
+=======
+.benefit-icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--light-purple);
+    border-radius: 15px; /* Bentuk kotak membulat */
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto 15px;
+}
+/* Placeholder Ikon Benefit (Gunakan gambar atau SVG asli jika ada) */
+.icon-1 { background-image: url('https://via.placeholder.com/80/5b46b8/e6e0ff?text=M'); }
+.icon-2 { background-image: url('https://via.placeholder.com/80/5b46b8/e6e0ff?text=P'); }
+.icon-3 { background-image: url('https://via.placeholder.com/80/5b46b8/e6e0ff?text=F'); }
+.icon-4 { background-image: url('https://via.placeholder.com/80/5b46b8/e6e0ff?text=S'); }
+
+.benefit-item p { font-weight: 500; color: var(--dark-blue); font-size: 0.9em; }
+
+
+/* --- Products Section --- */
+.products-section {
+    overflow: hidden;
+    padding-top: 20px; 
+}
+.products-section .section-title { color: var(--primary-purple); }
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 
 /* Background pola lingkaran */
 .products-section::before {
@@ -485,6 +568,10 @@ section {
     align-items: center;
     position: relative;
     margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+    padding: 50px 0;
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 }
 
 /* Jam (Bawah) */
@@ -539,6 +626,7 @@ section {
 .detail-item-jam.item-2::before { transform: translateY(-50%) rotate(0deg); left: -130px; }
 .detail-item-jam.item-3::before { transform: translateY(-50%) rotate(10deg); left: -110px; }
 
+<<<<<<< HEAD
 /* === Gambar JAM SET di Products === */
 .jam-images-group {
   position: relative;
@@ -646,6 +734,47 @@ section {
 @media (max-width: 768px){
   .gallery-item { flex-basis: 72vw; aspect-ratio: 4 / 3; }
 }
+=======
+
+/* --- Gallery Section --- */
+.gallery-section {
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.gallery-section .section-title { color: var(--dark-blue); }
+
+.gallery-slider-wrapper {
+    position: relative;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.gallery-grid {
+    display: flex; /* Menggunakan flex untuk horizontal scrolling */
+    overflow-x: scroll;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    /* Menyembunyikan scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.gallery-grid::-webkit-scrollbar { display: none; }
+
+.gallery-item {
+    flex: 0 0 250px; /* Lebar item tetap */
+    height: 180px;
+    background-color: var(--light-purple);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    scroll-snap-align: start;
+}
+.gallery-item:hover { transform: scale(1.05); z-index: 5; }
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 
 /* Placeholder Gambar Galeri (harus diganti dengan gambar asli) */
 .item-1 { background-image: url('https://via.placeholder.com/300x180/c0c0c0/5b46b8?text=1'); }
@@ -678,7 +807,11 @@ section {
 /* --- Testimonials Section --- */
 .testimonials-section {
     padding-top: 30px;
+<<<<<<< HEAD
     margin-bottom: 160px;
+=======
+    margin-bottom: 90px;
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 }
 .testimonials-section .section-title { color: var(--dark-blue); }
 
@@ -738,6 +871,7 @@ section {
 
 /* --- Team Section --- */
 .team-section {
+<<<<<<< HEAD
   padding-top: 20px;
   padding-bottom: 100px;
 }
@@ -826,6 +960,75 @@ section {
 
 .contact-section-new {
     background: transparent; /* biar nyatu sama body */
+=======
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.team-section .section-title { color: var(--dark-blue); }
+.team-section .section-subtitle { color: var(--dark-blue); }
+
+.team-members-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 250px;
+}
+
+.member-photo {
+    width: 180px;
+    height: 180px;
+    /* Placeholder foto tim */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px solid var(--primary-purple);
+    margin: 0 auto 15px;
+    /* Lingkaran luar (border ungu) */
+    position: relative;
+    padding: 10px;
+}
+/* Placeholder gambar foto tim */
+.photo-1 { background-image: url('https://via.placeholder.com/180/c0c0c0/5b46b8?text=Tyas'); }
+.photo-2 { background-image: url('https://via.placeholder.com/180/c0c0c0/5b46b8?text=Aulia'); }
+
+
+.team-member h4 {
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #6a6a6a;
+    margin-bottom: 15px;
+}
+
+.social-icons-team {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons-team i {
+    color: var(--primary-purple);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.social-icons-team i:hover { color: var(--dark-blue); }
+
+/* --- Contact Section (GET IN TOUCH) --- */
+.contact-section-new {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    /* Menggunakan background gradien halus dari desain */
+    background: linear-gradient(180deg, var(--light-purple) 0%, var(--very-light-blue) 100%);
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
 }
 
 .contact-title { color: var(--dark-blue); }
@@ -954,8 +1157,13 @@ section {
 
 /* --- Footer --- */
 .footer {
+<<<<<<< HEAD
   margin: 60px 20px 20px 20px; /* <- nambah jarak di atas footer */
   /* ... */
+=======
+    /* Menghilangkan padding bawah dari body */
+    margin: 0 20px 20px 20px; /* Margin untuk efek mengambang */
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
     
     /* Efek mengambang (Floating Effect) */
     background-color: var(--dark-blue);
@@ -1107,4 +1315,8 @@ section {
         margin: 0 0 0 0; 
         border-radius: 0;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8cc7d080523403351a4bb18218d84b6b6765a1d3
