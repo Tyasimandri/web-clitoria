@@ -414,8 +414,8 @@ section {
 
 /* Ukuran & efek dasar */
 .product-hero-img {
-  width: min(44vw, 580px);
-  transform: rotate(-14deg);
+  width: min(450px, 580px);
+  transform: rotate(-14deg) translateY(50px);
   filter: drop-shadow(0 20px 40px rgba(44, 26, 91, .32));
   transition: 
     transform 0.4s cubic-bezier(.22,.8,.25,1),
