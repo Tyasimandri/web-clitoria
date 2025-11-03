@@ -314,12 +314,6 @@ section {
   transform: rotate(-18deg);
   z-index: 3;
 }
-#pouch-hero .s2 {
-  right: 8%;
-  top: 46%;
-  transform: rotate(-22deg);
-  z-index: 4;
-}
 
 /* Animasi masuk (zoom halus) */
 #pouch-hero .stick {
@@ -330,7 +324,6 @@ section {
   animation: pouchZoom 0.8s cubic-bezier(.22,.8,.25,1) forwards;
 }
 #pouch-hero.is-visible .s1 { animation-delay: 0.05s; }
-#pouch-hero.is-visible .s2 { animation-delay: 0.15s; }
 
 @keyframes pouchZoom {
   0% { opacity: 0; transform: scale(0.85) rotate(-20deg); filter: blur(4px); }
@@ -343,11 +336,9 @@ section {
   #pouch-hero { min-height: 480px; }
   #pouch-hero .stick { width: clamp(260px, 32vw, 360px); }
   #pouch-hero .s1 { right: 16%; top: 40%; }
-  #pouch-hero .s2 { right: 4%;  top: 50%; }
 }
 @media (max-width: 560px) {
   #pouch-hero .s1 { display: none; }
-  #pouch-hero .s2 { right: 6%; top: 42%; transform: rotate(-18deg); }
 }
 
 /* --- Benefits Section --- */
